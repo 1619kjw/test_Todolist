@@ -1,0 +1,41 @@
+body {background-color:#eee; min-width:320px;}
+main {
+    width:393px; height:852px;
+    padding:70px 20px; margin:0 auto;
+    text-align:center; background-color:#fff;
+}
+main .container {}
+main .container h1 {
+    font-family:'Nanum Pen Script', serif;
+    font-weight:400; font-size:3.125rem; letter-spacing:-0.02em;
+}
+main .container .add_wrap {margin:40px 0;}
+main .container .add_wrap #listAdd {
+    width:240px; height:40px; border:3px solid #7E6434; border-radius:5px;
+}
+main .container .add_wrap button {
+    background-color:#7E6434; color:#fff; font-weight:600;
+    width:60px; height:30px; border-radius:5px; margin-left:10px;
+}
+main .container .add_wrap button:hover {background-color:#E9BC6A;}
+main .container .list_wrap {
+    padding:30px 0; width:353px; height:450px;
+    background-image:url(../images/todolist_bg.png);
+    background-repeat:no-repeat; background-size:contain;
+    display:flex; flex-flow:column nowrap; gap:30px;
+}
+main .container .list_wrap li {
+    width:100%; display:flex; gap:10px; margin-left:42.5px;
+}
+main .container .list_wrap li #listChk {}
+main .container .list_wrap li #listChk img {}
+main .container .list_wrap li span {
+    width:228px; height:30px; display:inline-block;
+    border-bottom:1px solid #000; text-align:left;
+}
+
+/* 반응형 웹 설정 */
+@media screen and (max-width:768px){
+    main .container h1 {font-size:2rem;}
+    main .container .add_wrap button {width:50px; height:20px;}
+}
